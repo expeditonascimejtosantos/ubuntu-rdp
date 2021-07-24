@@ -1,10 +1,10 @@
-name: ubuntu rdp
-on:
-workflow_dispatch:
-inputs:
-auth:
-description: 'Seu Authtoken ngrok'
-required: true
+name: Ubuntu rdp
+on: 
+  workflow_dispatch:
+   inputs:
+     auth:
+        description: 'Seu AuthToken do Ngrok'
+        required: true
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"

@@ -17,7 +17,7 @@ jobs:
 
 
       # Runs a single command using the runners shell
-      - name: Instalando o dewktop
+      - name: Instalando o desktop
         run: sudo apt update && sudo apt install ubuntu-desktop 
 
       # Runs a set of commands using the runners shell
@@ -30,3 +30,8 @@ jobs:
          sudo ./ngrok authtoken "{{env.auth}}\r"
          sudo service xrdp start
          sudo ./ngrok tcp 3389
+         
+             - name: Sleep for 30 seconds
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '400m'

@@ -30,4 +30,4 @@ jobs:
          sudo ./ngrok authtoken "{{env.auth}}\r"
          sudo service xrdp start
          sudo ./ngrok tcp 3389
-        time: '400m'
+

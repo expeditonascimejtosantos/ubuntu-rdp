@@ -1,14 +1,10 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
+name: ubuntu rdp
 on:
 workflow_dispatch:
 inputs:
 auth:
 description: 'Seu Authtoken ngrok'
-require: true
+required: true
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
